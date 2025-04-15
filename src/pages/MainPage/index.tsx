@@ -8,10 +8,12 @@ import { User } from '../../types';
 type MainPageProp = {
     inputRef: RefObject<HTMLInputElement | null>;
     showApi: () => void;
-    apiGithub: User | null
+    apiGithub: User | null;
+    isLoading: boolean;
+    errorMensage: string | null;
 }
 
-function MainPage({ inputRef, showApi, apiGithub }: MainPageProp) {
+function MainPage({ inputRef, showApi, apiGithub, isLoading, errorMensage }: MainPageProp) {
     return (
         <div className={styles.container}>
 
@@ -22,7 +24,7 @@ function MainPage({ inputRef, showApi, apiGithub }: MainPageProp) {
                 <button onClick={showApi}><CiSearch className={styles.icon} /></button>
             </div>
 
-            <UserInfo apiGithub={apiGithub} />
+            <UserInfo apiGithub={apiGithub} isLoading={isLoading} errorMensage={errorMensage} />
 
         </div>
     )

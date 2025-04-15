@@ -1,9 +1,9 @@
 
 .container {
     display: flex;
-    padding: 1.5rem 2rem;
-    border-radius: 1.4rem;
-    background-color: #D9D9D9;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
 }
 
 .userContent {
@@ -12,11 +12,16 @@
     align-items: center;
     flex-direction: row-reverse;
     gap: 2rem;
+    background-color: #D9D9D9;
+    padding: 1.5rem 2rem;
+    border-radius: 1.4rem;
+    transition: all 0.3s ease-in-out;
 }
 
 .userDesc h3 {
     color: #005cff;
     font-size: 1.3rem;
+    padding-bottom: 5px;
 }
 
 .userDesc p {
@@ -25,5 +30,41 @@
 
 .userContent img {
     height: 250px;
+    border: 3px solid #005cff;
     border-radius: 100%;
+}
+
+.errorMensage {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 11px;
+    background-color: #D9D9D9;
+    color: #ff0000;
+}
+
+.loading {
+    font-size: 18px;
+    color: #005cff;
+    font-weight: bold;
+    animation: pulse 1.5s infinite;
+}
+  
+@keyframes pulse {
+    0% { opacity: 0.2 }
+    50% { opacity: 1 }
+    100% { opacity: 0.2 }
+}
+
+@media screen and (max-width: 600px) {
+    
+    .userContent {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 1.5rem 1rem;
+    }
+
+    .userContent img {
+        height: 230px;
+    }
+
 }

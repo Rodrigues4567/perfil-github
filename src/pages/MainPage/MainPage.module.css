@@ -7,6 +7,7 @@
     gap: 1.5rem;
     width: 1250px;
     padding: 2.5rem 1rem;
+    border-radius: 10px;
     background-color: black;
 }
 
@@ -47,4 +48,25 @@
   
 .icon {
     font-size: 32px;
+}
+
+@media screen and (max-width: 1250px) {
+    
+    .container {
+        width: 100vw;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .container img {
+        height: 62px;
+    }
+    
+    .inputs_container input {
+        font-size: 19px;
+        width: 73vw;
+    }
+
 }
