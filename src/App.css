@@ -1,12 +1,6 @@
 
-@font-face {
-    font-family: 'font-default';
-    src: url('fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf');
-}
-
 body {
     background-color: #1F1F1F;
-    font-family: 'font-default', 'sans-serif';
 
     background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
     background-repeat: no-repeat;

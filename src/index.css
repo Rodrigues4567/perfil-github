@@ -1,14 +1,13 @@
 
 @font-face {
     font-family: 'font-default';
-    src: url('fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf');
+    src: url('../assets/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLCopszwdthwght.ttf') format('truetype');
 }
 
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'font-default', 'sans-serif';
 }
 
 body {
@@ -16,5 +15,5 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'font-default', 'sans-serif';
+    font-family: 'font-default', sans-serif;
 }
